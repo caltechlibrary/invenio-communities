@@ -141,12 +141,12 @@ def create_ui_blueprint(app):
         item = current_menu.submenu("main.communities")
         item.register(
             "invenio_communities.communities_frontpage",
-            "Communities",
+            "Collections",
             order=1,
         )
         current_menu.submenu("plus.community").register(
             "invenio_communities.communities_new",
-            "New community",
+            "New collection",
             order=3,
             visible_when=_can_create_community,
         )
