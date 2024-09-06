@@ -144,14 +144,8 @@ def register_menus(app):
     """Register community menu items."""
     current_menu.submenu("main.communities").register(
         endpoint="invenio_communities.communities_frontpage",
-        text=_("Communities"),
+        text=_("Collections"),
         order=1,
-    )
-    current_menu.submenu("plus.community").register(
-        endpoint="invenio_communities.communities_new",
-        text=_("New community"),
-        order=2,
-        visible_when=_show_create_community_link,
     )
 
     communities = current_menu.submenu("communities")
