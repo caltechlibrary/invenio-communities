@@ -9,6 +9,33 @@
 Changes
 =======
 
+Version v17.6.0 (released 2024-12-09)
+
+- notifications: add comment notification for subcoms
+    fix new subcommunity title
+- ui: refactored and generalized OrganizationsList
+- affiliations: added identifiers in orgs
+- schema: added  orgs in ui schema
+- fix: extend invitation request expiry
+- tests: remove invenio-admin dependence
+    * Removes the dependence on the invenio-admin action need.
+    * Adds some more test cases for featured communities.
+
+Version v17.5.1 (released 2024-11-28)
+
+- settings-ui: fix organizations metadata payload
+    * Fixes a bug where organizations selected from the search in the
+      profile form, should also submit the `id` so that it's linked to the
+      affiliation vocabulary entry.
+
+Version v17.5.0 (released 2024-11-27)
+
+- subcommunities: implement invitation request
+    * Allows parent communities to create requests to invite other
+      communities as their children.
+- config: add LogoNotFoundError
+- communities: config: Update static page URLs to prevent name collisions
+
 Version v17.4.0 (released 2024-11-11)
 
 - admin: change default number of results from 10 to 20
